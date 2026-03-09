@@ -3,40 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy birthday babi ko</title>
+    <title>Happy Birthday Babi ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Login Container -->
-    <div class="login-container" id="loginContainer">
-        <h1>HI BABIIII! LOG IN KA.</h1>
-        <form id="loginForm">
-            <label for="username">Name:</label>
-            <input type="text" id="username" required autofocus>
-            <button type="submit">Log In</button>
-        </form>
-        <p id="error-message"></p>
-    </div>
 
-    <!-- Success Message -->
-    <div id="successMessage" class="hidden">
-        <div class="mail-paper">
-            <p>Hello babi, happy-happy birthday to youuuuu! you know that words can't express how grateful I am to met you in my life. Hoping that this day would be 
-                gentle for you, more blessings to come babi, I may not giving you material gifts right now but soon I'm gonna make bawiiii, this is not a promise but I will do my best
-                to do it. Always remember that you hold a very special place into my heart, and I will always love you and choose you everyday.Enjoy your day babiii, happy birthday ulittt!!❤️</p>
+    <!-- Floating hearts -->
+    <div class="hearts-bg" id="heartsContainer"></div>
+
+    <!-- Letter -->
+    <div class="card-wrapper">
+        <div class="envelope-flap"></div>
+        <div class="letter-card">
+            <div class="letter-header">
+                <div class="title">Happy Birthday, Babi! 🎂</div>
+                <div class="subtitle">A little letter, straight from my heart</div>
+            </div>
+            <div class="divider"><span>❤️</span></div>
+            <div class="letter-body">
+                <span class="greeting">Hello babi,</span>
+                Words can't express how grateful I am lagi to met you in my life. Hoping that this day would be gentle for you — more blessings to come, babi! I may not be giving you material gifts right now , but soon I'm gonna make bawi. This is not a promise, but I will do my best to do it.
+                <br><br>
+                Always remember na very special ikaw saaakin, and I will always love you and choose you every single day.
+                <br><br>
+                I hope you enjoy your day, babi! Happy birthday ulit!! ❤️
+                <span class="signature">— always yours 🌸</span>
+            </div>
+            <button class="heart-button" id="exitButton">Send a Kiss ❤️</button>
         </div>
-        <button id="exitButton" class="heart-button">Exit ❤️</button>
     </div>
 
-    <!-- Kiss GIF Modal -->
-    <div id="kissModal" class="modal hidden">
+    <!-- Kiss Modal -->
+    <div class="modal" id="kissModal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="https://media1.tenor.com/m/o_5RQarGvJ0AAAAC/kiss.gif" 
-                 alt="Kiss GIF" 
-                 class="kiss-gif">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <div class="modal-title">Mwuuuuaaaaaaaaah!! 💋💋💋💋💋💋💋💋</div>
+            <img src="https://media1.tenor.com/m/o_5RQarGvJ0AAAAC/kiss.gif" alt="Kiss" class="kiss-gif">
         </div>
     </div>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
